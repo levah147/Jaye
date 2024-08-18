@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
@@ -81,5 +81,47 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+</style> -->
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+
+<template>
+  <div>
+    <main>
+      <header>
+        <div><img src="./assets/Jaye.png" alt="Jaye Logo"></div>
+        <div class="signIn"><p class="mr-2">Already have an account?</p> <button class="btn-jaye">Sign in</button></div>
+      </header>
+      <section></section>
+    </main>
+  </div>
+</template>
+
+<style scoped>
+main{font-family: "Jost", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 2px solid #f1f1f1;
+}
+.btn-jaye{
+  color:white;
+  background-color: #E9C46A;
+  padding: 8.72px 21.8px;
+  border: none;
+  border-radius: 5.23px;
+}
+.signIn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

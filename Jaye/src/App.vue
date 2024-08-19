@@ -101,14 +101,14 @@ import HelloWorld from './components/HelloWorld.vue'
       </header>
       <section>
         <div class="px-5" style="width: 40%">
-          <h5 class="m-0">Create your account</h5>
+          <h4 class="m-0">Create your account</h4>
           <p>Sign up for your #1 shopping Experience</p>
           <form action="">
             <label for="email" class="my-3">
               <input type="email" name="email" id="email" class="form-control" placeholder="Email"/>
             </label>
             <button type="submit" class="form-control btn-jaye">Next</button>
-            <div class="mt-3.5">
+            <div class="mt-3">
               <button class="form-control d-flex justify-content-center mb-2">
                 <svg
                   width="22"

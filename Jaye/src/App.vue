@@ -105,7 +105,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <p>Sign up for your #1 shopping Experience</p>
           <form action="">
             <label for="email" class="my-3">
-              <input type="email" name="email" id="email" class="form-control" />
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email"/>
             </label>
             <button type="submit" class="form-control btn-jaye">Next</button>
             <div class="mt-3.5">

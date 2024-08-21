@@ -12,7 +12,7 @@
     <title>Jaye</title>
     <style>
         body{
-            overflow: hidden;
+            overflow-y: hidden;
         }
         main {
           font-family: 'Jost', system-ui;
@@ -48,16 +48,37 @@
           height: 70vh;
           text-align: center ;
         }
+        .form-container{
+          width: 40%
+        }
         .floaty-container{
           position: absolute;
           right: 2rem;
           bottom: 1rem;
         }
+        .Floaty{
+          width:200px;
+          height: 200px;
+        }
+        @media screen and (max-width: 667px) {
+          .form-container{
+            width: 100%;
+          }
+          .floaty-container{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        .Floaty{
+          width:100px;
+          height:100px;
+        }
+        }
         </style>
   </head>
   <body>
     <!-- Container Wrapper for the whole application -->
-    <div>
+    <div class="container-fluid">
         <div>
             <!-- The main body for the Application -->
           <main>
@@ -65,13 +86,13 @@
             <header>
               <div><img src="./assets/Jaye.png" alt="Jaye Logo" /></div>
               <div class="signIn">
-                <p class="m-0">Already have an account?</p>
+                <p class="m-0 d-none">Already have an account?</p>
                 <button class="btn-jaye ms-2" id="Signin">Sign in</button>
               </div>
             </header>
             <!-- Section contains the form and floaty- (you floating image) -->
-            <section>
-              <div class="px-5" style="width: 40%">
+            <section class="">
+              <div class="px-5 form-container" style="">
                 <h4 class="m-0">Create your account</h4>
                 <p>Sign up for your #1 shopping Experience</p>
                 <form action="">
@@ -127,7 +148,7 @@
               </div>
             </section>
             <div class="floaty-container">
-              <img src="./assets/Floaty.png" alt="Floaty" width="200px" height="200px">
+              <img src="./assets/Floaty.png" alt="Floaty" class="Floaty">
             </div>
           </main>
         </div>

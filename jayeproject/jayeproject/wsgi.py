@@ -16,5 +16,3 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jayeproject.settings')
 application = get_wsgi_application()
 
 
-from whitenoise import WhiteNoise
-

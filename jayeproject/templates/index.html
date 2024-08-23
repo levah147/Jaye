@@ -13,7 +13,7 @@
     <title>Jaye</title>
     <style>
         body{
-            overflow-y: hidden;
+            overflow: hidden;
         }
         main {
           font-family: 'Jost', system-ui;
@@ -49,37 +49,16 @@
           height: 70vh;
           text-align: center ;
         }
-        .form-container{
-          width: 40%
-        }
         .floaty-container{
           position: absolute;
           right: 2rem;
           bottom: 1rem;
         }
-        .Floaty{
-          width:200px;
-          height: 200px;
-        }
-        @media screen and (max-width: 667px) {
-          .form-container{
-            width: 100%;
-          }
-          .floaty-container{
-          position: absolute;
-          right: 0;
-          bottom: 0;
-        }
-        .Floaty{
-          width:100px;
-          height:100px;
-        }
-        }
         </style>
   </head>
   <body>
     <!-- Container Wrapper for the whole application -->
-    <div class="container-fluid">
+    <div>
         <div>
             <!-- The main body for the Application -->
           <main>
@@ -87,13 +66,13 @@
             <header>
               <div><img src="{% static './assets/Jaye.png' %}" alt="Jaye Logo" /></div>
               <div class="signIn">
-                <p class="m-0 d-none">Already have an account?</p>
+                <p class="m-0">Already have an account?</p>
                 <button class="btn-jaye ms-2" id="Signin">Sign in</button>
               </div>
             </header>
             <!-- Section contains the form and floaty- (you floating image) -->
-            <section class="">
-              <div class="px-5 form-container" style="">
+            <section>
+              <div class="px-5" style="width: 40%">
                 <h4 class="m-0">Create your account</h4>
                 <p>Sign up for your #1 shopping Experience</p>
                 <form action="">
@@ -149,11 +128,7 @@
               </div>
             </section>
             <div class="floaty-container">
-<<<<<<< HEAD:index.html
-              <img src="./assets/Floaty.png" alt="Floaty" class="Floaty">
-=======
               <img src="{% static './assets/Floaty.png' %}" alt="Floaty" width="200px" height="200px">
->>>>>>> 5a29532b3485563b2038a1d496323b624ea881fa:jayeproject/templates/index.html
             </div>
           </main>
         </div>

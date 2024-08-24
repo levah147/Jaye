@@ -54,6 +54,25 @@
           right: 2rem;
           bottom: 1rem;
         }
+        .floaty{
+          width: 200px;
+          height: 200px;
+        }
+        /* @media screen and (min-width: 1200px) { */
+          .line{
+          width: 40%;
+          }
+        /* } */
+        
+        @media screen and (max-width: 700px) {
+          .floaty{
+            width: 100px;
+            height: 100px;
+          }
+          .line{
+            width: 100%;
+          }
+        }
         </style>
   </head>
   <body>
@@ -72,7 +91,7 @@
             </header>
             <!-- Section contains the form and floaty- (you floating image) -->
             <section>
-              <div class="px-5" style="width: 40%">
+              <div class="px-5 line">
                 <h4 class="m-0">Create your account</h4>
                 <p>Sign up for your #1 shopping Experience</p>
                 <form action="">
@@ -128,7 +147,7 @@
               </div>
             </section>
             <div class="floaty-container">
-              <img src="{% static './assets/Floaty.png' %}" alt="Floaty" width="200px" height="200px">
+              <img src="{% static './assets/Floaty.png' %}" alt="Floaty" class="floaty">
             </div>
           </main>
         </div>

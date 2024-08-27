@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{% static './assets/Jaye.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Jaye</title>
     <style>
         header{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         a{
             text-decoration: none;
@@ -20,11 +26,15 @@
             border: none;
             border-radius: 5.23px;
         }
+        .bg-lemon{
+            background-color: #e9c46a;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <header>
+    <div class="px-3">
+        <header class="mt-3">
             <div>
                 <img src="../static/assets/Jaye.png" alt="Jaye Logo">
                 <a href="#">Shop</a>
@@ -40,11 +50,19 @@
             </div>
         </header>
         <main>
-            <!-- Banner Section -->
-            <div>Banner Section</div>
-            <div class="HeroImgCon mb-3">
-                <img src="" alt="">
+            <!-- Top Layer -->
+            <div>
+                 <!-- Banner Section -->
+                <div>
+                    Banner Section
+                    <div class="d-flex justify-content-center my-2 bg-success">Flash Sales 50% off on all Electronic Gadgets</div>
+                </div>
+                <div class="HeroImgCon mb-3">
+                    <img src="../static/assets/Hero.png" alt="" width="100%">
+                </div>
+                <div>Second Banner Section</div>
             </div>
+            <!-- Middle Layer -->
         </main>
         <footer></footer>
     </div>

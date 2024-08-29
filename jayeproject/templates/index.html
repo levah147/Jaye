@@ -9,52 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <title>Jaye</title>
-    <style>
-        body{
-            overflow: hidden;
-        }
-        main {
-          font-family: 'Jost', system-ui;
-          font-optical-sizing: auto;
-          font-style: normal;
-          position: relative;
-        }
-        header {
-          display: flex;
-          justify-content: space-between;
-          padding: 10px 30px;
-          border-bottom: 2px solid #f1f1f1;
-        }
-        .btn-jaye {
-          color: white;
-          background-color: #e9c46a;
-          padding: 8.72px 21.8px;
-          border: none;
-          border-radius: 5.23px;
-        }
-        .signIn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        label {
-          display: block;
-        }
-        section {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 70vh;
-          text-align: center ;
-        }
-        .floaty-container{
-          position: absolute;
-          right: 2rem;
-          bottom: 1rem;
-        }
-        </style>
+
   </head>
   <body>
     <!-- Container Wrapper for the whole application -->
@@ -64,7 +22,8 @@
           <main>
             <!-- Header Section for the Jaye Logo and the Sign in Button -->
             <header>
-              <div><img src="{% static './assets/Jaye.png' %}" alt="Jaye Logo" /></div>
+              <div><a href="{% url 'dasboard' %}"><img src="{% static './assets/Jaye.png' %}" alt="Jaye Logo" />
+              </a></div>
               <div class="signIn">
                 <p class="m-0">Already have an account?</p>
                 <button class="btn-jaye ms-2" id="Signin">Sign in</button>
@@ -134,9 +93,9 @@
         </div>
     </div>
       
-      
-    <script type="module" src="/src/main.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="{% static 'js/script.js' %}">
+    <script type="module" src="{% static '/src/main.js' %}"></script>
+    <!-- <script src="script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
